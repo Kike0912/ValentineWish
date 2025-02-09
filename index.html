@@ -16,27 +16,27 @@
     <div class="container">
       <div class="one">
         <h1 class="one">
-          Hey
-          <span id="name">xyz</span>
+          Hola Buenas noches Sr. Martinez de Batista
+          
         </h1>
-        <p class="two" id="greetingText">I really like your name btw!</p>
+        <p class="two" id="greetingText">CUF CUF!!! DIGO DIGO Anthony !</p>
       </div>
       <div class="three">
-        <p>It's Valentine!!! :D</p>
+        <p>Pronto sera una fecha especial no se si sabes cual es???!!! :D</p>
       </div>
       <div class="four">
         <div class="text-box">
           <p class="hbd-chatbox">
-            Happy Valentine's Day!! Yeee! Love and blah blah...
+            De que fecha especial estara hablando mi Guapo novio????!!!
           </p>
-          <p class="fake-btn">Send</p>
+          <p class="fake-btn">Buscar</p>
         </div>
       </div>
       <div class="five">
-        <p class="idea-1">That's what I was going to do.</p>
-        <p class="idea-2">But then I stopped.</p>
+        <p class="idea-1">Ya sabes cual no???.<br>COMO QUE NO SABES!!!!!???.</p>
+        <p class="idea-2">bueno ya te digo :(  se acerca san valentin .</p>
         <p class="idea-3">
-          I realised, I wanted to do something <strong>special</strong>.
+          y quiero que sea un dia <strong>Especial</strong>.
         </p>
         <p class="idea-4">Because,</p>
         <p class="idea-5">
@@ -49,10 +49,10 @@
         </p>
       </div>
       <div class="six">
-        <img src="img/vector.jpg" alt="" class = "girl-dp" id="imagePath" />
+        <img src="img/vecto1.jpg" alt="" class = "girl-dp" id="imagePath" />
         <div class="wish">
-          <h3 class="wish-hbd">Happy Valentine's Day Gorgeous</h3>
-          <h5 id="wishText">kuch kuch</h5>
+          <h3 class="wish-hbd">Quieres Ser mi Valentin??</h3>
+          <h5 id="wishText">Anthony Jose Martinez Martinez</h5>
         </div>
       </div>
       <div class="seven">
@@ -124,14 +124,31 @@
         </svg>
       </div>
       <div class="nine">
-        <p>Okay, now come back and tell me if you liked it.</p>
-        <p id="replay">Or click, if you want to watch it again.</p>
-        <p class="last-smile">:)</p>
+        <p id="questionMessage">¿Qué dices? ¿Aceptas?</p>
+        <!-- El siguiente mensaje está inicialmente oculto -->
+        <div id="acceptMessage" style="display: none;">
+          <a href="Pagina2.html" style="cursor: pointer; color: rgb(33, 236, 169); text-decoration: underline;">
+            Sí acepto (no me puedes rechazar, por eso no puse otra opción).
+          </a>
+        </div>
+        <p class="last-smile"></p>
       </div>
-    </div>
-  </body>
+    
+      <script>
+        window.onload = function() {
+          // Primero mostramos el primer mensaje cuando la página cargue
+          const questionMessage = document.getElementById("questionMessage");
+          const acceptMessage = document.getElementById("acceptMessage");
+    
+          // Usamos setTimeout para que el siguiente mensaje se muestre después de 1 minuto y 5 segundos (65 segundos)
+          setTimeout(function() {
+            acceptMessage.style.display = "block"; // Mostramos el siguiente mensaje
+          }, 65000); // 1 minuto y 5 segundos = 65000 milisegundos
+        };
+      </script>
 
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-  <script type="text/babel" src="script/main.js"></script>
-</html>
+      <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+      <script type="text/babel" src="script/main.js"></script>
+    </body>
+    </html>
